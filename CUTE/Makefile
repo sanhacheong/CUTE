@@ -1,7 +1,7 @@
 ####################################################
 ###          User definable stuff
 #Behavior options
-USE_MPI = yes #Use MPI parallelization? Set to "yes" or "no"
+USE_MPI = no #Use MPI parallelization? Set to "yes" or "no"
 DEFINEOPTIONS = -D_VERBOSE #Comment out for more explicit output
 DEFINEOPTIONS += -D_HAVE_OMP #Comment this out if you don't have the OpenMP headers
 #DEFINEOPTIONS += -D_DEBUG #Only used for debugging
@@ -22,7 +22,7 @@ RT_MAX = 150.
 #3D CF (binning in r-mu) - maximum radius in Mpc/h
 R3D_MAX = 150.
 #Logarithmic binning - comment out if you want linear binning
-DEFINEOPTIONS += -D_LOGBIN
+# DEFINEOPTIONS += -D_LOGBIN
 #Number of bins per decade
 N_LOGINT = 10
 #Number of bins per dimension for 2D histograms
