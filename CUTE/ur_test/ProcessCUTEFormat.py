@@ -2,7 +2,7 @@ import numpy as np
 
 
 
-input_file_name = "./data/galaxies_DR9_CMASS_North_ascii.dat"
+input_file_name = "./data/galaxies_DR9_CMASS_South_ascii.dat"
 
 ra, dec, z, weight_fkp, weight_noz, weight_cp, weight_sdc = np.loadtxt(input_file_name, delimiter='\t', unpack=True, skiprows=1)
 weight = weight_fkp * weight_sdc * (weight_noz + weight_cp - 1)
